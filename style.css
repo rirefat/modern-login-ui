@@ -70,9 +70,19 @@ body {
     margin-top: 70px;
 }
 
-.form-item label:not(.checkBoxLable){
+.form-item label{
     display: inline-block;
-    background-color: white;
+    background-color: #f9f9f9;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+}
+
+.checkboxLabel label{
+    position: absolute;
+    transform: translate(10px, 2px);
 }
 
 input[type='email'],
@@ -112,10 +122,14 @@ button{
     cursor: pointer;
     box-shadow: 4px 4px 8px rgb(171, 172, 172);
     margin-bottom: 30px;
+    transition: 0.5s;
 }
 
 button:hover{
-    background: linear-gradient(45deg, var(--secondary-color),  var(--primary-color));
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-5px);
 }
 
 /* Responsive */
+@media (max-width: 1350px){}
+@media (max-width: 768px){}
